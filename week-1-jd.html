@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .fl {
+      float: left;
+    }
+    
+    .fr {
+      float: right;
+    }
+    
+    .flex {
+      display: flex;
+    }
+    
+    li {
+      list-style: none;
+    }
+    
+    input,
+    button {
+      outline: none;
+      border: none;
+    }
+    
+    body {
+      -webkit-font-smoothing: antialiased;
+      background-color: #fff;
+      font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, \\5B8B\4F53, sans-serif;
+      color: #666;
+    }
+    
+    #shortcut {
+      border-bottom: 1px solid #ddd;
+      background-color: #e3e4e5;
+    }
+    
+    #shortcut li {
+      float: left;
+    }
+    
+    #shortcut .city {
+      margin-left: 200px;
+    }
+    
+    #shortcut li.spacer {
+      overflow: hidden;
+      margin: 11px 5px 0;
+      width: 1px;
+      height: 10px;
+      background-color: #ccc;
+    }
+    
+    .container {
+      height: 30px;
+      line-height: 30px;
+      color: #999;
+      margin: auto;
+      width: 1190px;
+    }
+    
+    #header {
+      background-color: #f0f3ef;
+    }
+    
+    #header .container {
+      height: 140px;
+    }
+    
+    #header .search {
+      height: 60px;
+      position: relative;
+    }
+    
+    #header .search .er_code {
+      width: 60px;
+      height: 60px;
+      background-color: #fff;
+      margin-left: 20px;
+      float: right;
+    }
+    
+    #header .cart {
+      width: 188px;
+      height: 33px;
+      background-color: #fff;
+      text-align: center;
+      line-height: 33px;
+      margin-left: 20px;
+    }
+    
+    #header .search .form {
+      position: relative;
+      width: 550px;
+      height: 35px;
+      margin-left: 320px;
+    }
+    
+    #header .search .form,
+    #header .search .cart {
+      float: left;
+      margin-top: 25px;
+    }
+    
+    #header .search .form input {
+      padding: 4px 44px 4px 4px;
+      width: 450px;
+      height: 25px;
+      border: 1px solid transparent;
+      line-height: 25px;
+      font-size: 14px;
+      color: #989898;
+    }
+    
+    #header .search .form button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 35px;
+      line-height: 35px;
+      border: none;
+      background-color: #f10215;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+    
+    #header .hotwords {
+      overflow: hidden;
+      width: 550px;
+      height: 20px;
+      line-height: 20px;
+    }
+    
+    #header .navitems {
+      height: 40px;
+      padding-top: 20px;
+      margin-left: 200px;
+    }
+    
+    .navitems_container {
+      width: 790px;
+    }
+    
+    .navitems li {
+      margin-left: 30px;
+    }
+    
+    .navitems .global_goods {
+      width: 190px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background-color: #8f2dc8;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div id="shortcut">
+      <div class="container">
+        <ul class="fl">
+          <li class="city">北京</li>
+        </ul>
+        <ul class="fr">
+          <li>你好，请登录 免费注册</li>
+          <li class="spacer"></li>
+          <li>我的订单</li>
+          <li class="spacer"></li>
+          <li>我的京东</li>
+          <li class="spacer"></li>
+          <li>京东会员</li>
+          <li class="spacer"></li>
+          <li>企业采购网站导航</li>
+          <li class="spacer"></li>
+          <li>客户服务</li>
+          <li class="spacer"></li>
+          <li>手机京东</li>
+        </ul>
+      </div>
+    </div>
+    <div id="header">
+      <div class="container">
+        <div class="logo"></div>
+        <div class="search">
+          <div class="form">
+            <input type="text">
+            <button>搜索</button>
+          </div>
+          <div class="cart">
+            购物车
+          </div>
+          <div class="er_code">
+            二维码
+          </div>
+
+        </div>
+        <div class="hotwords"></div>
+        <div class="navitems">
+          <div class="global_goods fr">
+            全球好物
+          </div>
+          <div class="navitems_container">
+            <ul class="flex">
+              <li>秒杀</li>
+              <li>优惠券</li>
+              <li>PLUS</li>
+              <li>闪购</li>
+            </ul>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
